@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Session Template</title>
+  <link rel="stylesheet" href="session_styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Student Session Template</h1>
+      <nav>
+        <ul>
+          <li><a href="#instructions">Instructions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li class="signIn" id="signIn"><a href="#signin">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Modal for user input -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter Your Information</h2>
+      <form id="studentForm">
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required>
+        <label for="repoLink">Public Repo Link:</label>
+        <input type="text" id="repoLink" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <section class="sections-container">
+
+    <section class="student-details">
+      <h2>Student Details</h2>
+      <div id="studentTable">
+        <!-- Student information will be populated dynamically -->
+      </div>
+    </section>
+
+    <section class="session-controls">
+      <h2>Session Controls</h2>
+      <div id="trafficLights">
+        <h3>Traffic Lights</h3>
+        <!-- Traffic lights content -->
+      </div>
+      <div id="difficultyMeter">
+        <h3>Difficulty Meter</h3>
+        <!-- Difficulty meter content -->
+      </div>
+    </section>
+
+</section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li>&copy 2024 Handy_4ndy</li>
+        <li><a href="#terms">Terms and Conditions</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>
