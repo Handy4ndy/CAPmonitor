@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Training Tool</title>
+  <title>CAP Monitor</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Online Training Tool</h1>
+      <h1>CAP Monitor</h1>
       <nav>
         <ul>
           <li><a href="#instructions">Instructions</a></li>
@@ -22,13 +22,22 @@
   </header>
 
   <main>
+
+    <div class="intro">
+
+      <section>
+        <p>Welcome to the Code Along Progression Monitor, designed to aid facilitating online sessions with realtime data and responce's.</p>
+      </section>
+
+    </div>
+
     <div class="container sections-container">
       <section class="session">
         <h2>Create a Session</h2>
         <form id="create-session-form">
           <label for="session-name">Session Name:</label>
           <input type="text" id="session-name" required>
-          <button type="submit">Create Session</button>
+          <a href="sessiontemplate.html"><button submit>Create Session</button></a>
         </form>
       </section>
 
@@ -36,8 +45,8 @@
         <h2>Join a Session</h2>
         <form id="join-session-form">
           <label for="session-code">Session Code:</label>
-          <input type="text" id="session-code" required>
-          <button type="submit">Join Session</button>
+          <input type="text" id="session-code"> <!-- <input type="text" id="session-code" required> -->
+          <a href="sessiontemplate.html"><button submit>Join Session</button></a>
         </form>
       </section>
     </div>
