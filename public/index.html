@@ -26,7 +26,7 @@
     <div class="intro">
 
       <section>
-        <p>Welcome to the Code Along Progression Monitor, designed to aid facilitating online sessions with realtime data and responce's.</p>
+        <p>Welcome to the Code Along Progression Monitor, designed to aid facilitating online sessions with realtime data and response's.</p>
       </section>
 
     </div>
@@ -37,7 +37,7 @@
         <form id="create-session-form">
           <label for="session-name">Session Name:</label>
           <input type="text" id="session-name" required>
-          <a href="sessiontemplate.html"><button submit>Create Session</button></a>
+          <button onclick="window.location.href = 'createsessiontemplate.html'">Create Session</button>
         </form>
       </section>
 
@@ -45,8 +45,8 @@
         <h2>Join a Session</h2>
         <form id="join-session-form">
           <label for="session-code">Session Code:</label>
-          <input type="text" id="session-code"> <!-- <input type="text" id="session-code" required> -->
-          <a href="sessiontemplate.html"><button submit>Join Session</button></a>
+          <input type="text" id="session-code" required>
+          <button onclick="window.location.href = 'sessiontemplate.html'">Join Session</button>
         </form>
       </section>
     </div>

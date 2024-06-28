@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Session Template</title>
+  <link rel="stylesheet" href="session_styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Student Session Template</h1>
+      <nav>
+        <ul>
+          <li><a href="#instructions">Instructions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li class="signIn" id="signIn"><a href="#signin">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Modal for user input -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter Your Information</h2>
+      <form id="studentForm">
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required>
+        <label for="repoLink">Public Repo Link:</label>
+        <input type="text" id="repoLink" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <main>
+
+  <div class="session-info">
+
+    <div class="intro">
+
+      <section>
+        <h1>Session Name</h1>
+
+        <p>Session Description :- here are the details about the session, links to resources ect</p>
+      </section>
+
+    </div>
+
+    <div class="sections-container">
+
+    <section class="student-details">
+      <h2>Student Details</h2>
+      <div id="studentTable">
+        <!-- Student information -->
+      </div>
+    </section>
+
+    </div>
+  
+    <div class="docs">
+
+      <section class="resources">
+        <h1>Docs / Resources</h1>
+      <p>A supplementary link to all documentation, references and repos can be found at the bottom of the page.</p>
+    </section>
+    
+    </div>
+
+  </div>
+
+  <aside class="session-controls">
+    <section>
+      <div class="monitor" id="progressMonitor">
+        <h3>Progress Monitor</h3>
+        <div class="progress-indicator">
+          <!-- Traffic Lights -->
+          <div class="traffic-light-container">
+            <div class="traffic-light">
+              <span class="traffic-light-label red"></span>
+              <br>
+              Error
+            </div>
+            <div class="traffic-light">
+              <span class="traffic-light-label yellow"></span>
+              <br>
+              In progress
+            </div>
+            <div class="traffic-light">
+              <span class="traffic-light-label green"></span>
+              <br>
+              Ready
+            </div>
+          </div>
+  
+          <!-- Difficulty Bar -->
+          <div class="difficulty-bar">
+            <div class="difficulty-indicator"></div>
+          </div>
+  
+          <!-- Emoji Selection -->
+          <div class="emoji-selection">
+            <span role="img" aria-label="Angry">😡</span>
+            <span role="img" aria-label="Sad">😢</span>
+            <span role="img" aria-label="Confused">😕</span>
+            <span role="img" aria-label="Neutral">😐</span>
+            <span role="img" aria-label="Happy">😀</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Chat Box -->
+      <section class="chat-box">
+        <h2>Chat Box</h2>
+        <div class="chat-messages">
+          <!-- Chat messages will be displayed here -->
+        </div>
+        <form id="chatForm">
+          <label for="message">Type your message:</label>
+          <input type="text" id="message" required>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </section>
+  </aside>
+  
+  
+
+
+
+
+
+  
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li>&copy 2024 Handy_4ndy</li>
+        <li><a href="#terms">Terms and Conditions</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>
