@@ -15,7 +15,7 @@ The **Code Along Progression Monitor** is designed to facilitate online and in-p
 - **Backend:** Node.js, Express.js
 - **Real-Time Communication:** Socket.IO
 - **Database:** MongoDB
-- **Deployment:** (Specify deployment platform or method, if applicable)
+- **Deployment:** (Local)
 
 ## How It Works
 
